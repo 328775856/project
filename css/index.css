@@ -5,3 +5,12 @@ body{
 .radius{
 	border-radius: 20px;
 }
+.cx{
+	background: #24c0bc;
+	color: white;
+	border-radius: 20px;
+}
+.cx:hover{
+	background: #1a918e;
+	color: white;
+}
