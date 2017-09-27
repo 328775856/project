@@ -14,3 +14,51 @@ body{
 	background: #1a918e;
 	color: white;
 }
+.bumen{
+	margin-left: 30px;
+	padding:0;
+	text-align: center;
+	min-width: 70%;
+	border-radius: 20px;
+}
+.bumen li a{
+	background: #f8f8f8;
+	width: 100%;
+	border-radius: 25px;
+}
+.th td{
+	background: #f8f8f8;
+}
+.bumen1{
+	margin-left:76px;
+	margin-top:0; 
+	padding:0;
+	text-align: center;
+	min-width: 20%;
+}
+.bumen1 li a{
+	background: #000;
+	width: 104%;
+	color: #b8b9bc;
+
+}
+.bumen1 li a:hover{
+	background: #343843;
+	width: 104%;
+	color: #fff;
+}
+#out{
+	color: #23a29e;
+}
+#out:hover{
+	color: #2ce7e1;
+}
+.success1{
+	color: #24c0b9;
+}
+.no{
+	color: #ea9292;
+}
+.ing{
+	color: #eae392;
+}
