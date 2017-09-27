@@ -15,10 +15,10 @@ body{
 	color: white;
 }
 .bumen{
-	margin-left: 30px;
+	margin-left: 40px;
 	padding:0;
 	text-align: center;
-	min-width: 70%;
+	min-width: 68%;
 	border-radius: 20px;
 }
 .bumen li a{
