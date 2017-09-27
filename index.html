@@ -10,7 +10,7 @@
 <body>
 <!-- 导航 -->
     <nav class="navbar navbar-fixed-top navbar-inverse"   style="background: #343843;">
-      <div class="container">
+      <div class="container" style=" width: 80%;">
       	<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navCollapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -22,19 +22,19 @@
       	</div>
       	<div class="collapse navbar-collapse col-lg-4" id="navCollapse">
 	 	 	<ul class="nav navbar-nav">
-		  	 	<li role="presentation" class="hidden-md "><a href="">我的报销单</a></li>
+		  	 	<li role="presentation" class="hidden-md "><a href="" id="a">我的报销单</a></li>
 		  	 	<li role="presentation" class="hidden-sm"><a href="">我的审核任务</a></li>
 	   	 	</ul> 
    	 	</div>
-   	 	<div class="dropdown col-lg-2 col-lg-offset-6">
+   	 	<div class="dropdown col-lg-2 col-lg-offset-6" style="float: right; padding: 0">
 				<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" style="float: right;background: #000;color: #fff; margin: 0;padding-bottom:0px; border: 0px; border-radius: 0px; line-height: 44px;">
 				<img src="images/qq.jpg" alt="..." class="img-circle" width="30px" height="30px;">
 				张三
 				<span class="caret"></span>
 				</button>
-				<ul class="dropdown-menu bumen1">
-					<li><a href="">账号信息</a></li>
-					<li><a href="" id="out">退出</a></li>
+				<ul class="dropdown-menu bumen1" style="margin-left:109px;">
+					<li><a href="" style="padding: 10px 20px;">账号信息</a></li>
+					<li><a href="" id="out"  style="padding: 10px 20px;">退出</a></li>
 				</ul>
 		 	  </div>
    	  </div>		
@@ -46,11 +46,11 @@
 			   <h4>报销单审核列表</h4>
 			 </div>
 		 	  <div class="dropdown col-lg-2">
-				<button class="btn btn-default dropdown-toggle radius" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				<button class="btn btn-default dropdown-toggle radius" type="button" id="dropdownMenu1" data-toggle="dropdown" style="width:120%">
 				所有公司和部门
-				<span class="caret"></span>
+				<span class="caret" style="margin-left: 50px;"></span>
 				</button>
-				<ul class="dropdown-menu bumen" style="">
+				<ul class="dropdown-menu bumen2" style="">
 					<li><a href="">市场部</a></li>
 					<li><a href="">公关部</a></li>
 					<li><a href="">项目部</a></li>
@@ -58,16 +58,16 @@
 					<li><a href="">后勤部</a></li>
 				</ul>
 		 	  </div>
-			  <div class="form-group has-feedback col-lg-2"">
+			  <div class="form-group has-feedback col-lg-2" style="margin-left: 30px;">
 				<label class="control-label" for="#ipt1"></label>
-				<input type="text" class="form-control radius" id="ipt1" style="margin-top: -20px;" placeholder="报销单审核列表">
+				<input type="text" class="form-control radius" id="ipt1" style="margin-top: -20px;min-width: 120%;" placeholder="报销单审核列表">
 				<span class="glyphicon glyphicon-search form-control-feedback" style="margin-top: -25px;margin-right: 15px; cursor: pointer;"></span>
 			  </div>
-			  <div class="form-group col-lg-2"">
+			  <div class="form-group col-lg-2" style="margin-left: 30px;">
 				<label  class="control-label" for="#ipt1"></label>
-				<input style="margin-top: -20px; background: #fff;" type="text" class="form-control radius" id="ipt1" placeholder="2017-07-01~2017-07-07" readonly="readonly">
+				<input style="margin-top: -20px; background: #fff;min-width: 130%;" type="text" class="form-control radius" id="ipt1" placeholder="2017-07-01~2017-07-07" readonly="readonly">
 			  </div>
-			  <div class="dropdown col-lg-2"">
+			  <div class="dropdown col-lg-2" style="margin-left: 20px;padding-right: 0">
 				<button class="btn btn-default dropdown-toggle radius" type="button" id="dropdownMenu1" data-toggle="dropdown">
 				全部审批状态
 				<span class="caret"></span>
@@ -78,9 +78,9 @@
 					<li><a href="">审批中</a></li>
 				</ul>
 		 	  </div>
-			  <button type="button" class="btn cx col-lg-1"" onclick="this.style.color='white'">查询</button>
+			  <button type="button" class="btn cx col-lg-1" style="margin-left: -10px;width: 5%;" onclick="this.style.color='white'">查询</button>
 		  </div>
-		  <table class="table table-bordered">	
+		  <table class="table" style="border-top: 0px;">	
 			<tr class="th">
 			 <td>报销单编号</td>
 			 <td>报销人公司</td>
@@ -171,20 +171,30 @@
 			</tr>
 		  </table>
 		  <div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
+		  <div class="col-lg-3 col-lg-offset-1" style="padding-top: 25px;text-align: right;">
+			共459条，每页显示
+			<select name="" id="">
+			  <option value="">1</option>
+			  <option value="">2</option>
+			  <option value="" selected="select">3</option>
+			  <option value="">4</option>
+			  <option value="">5</option>
+			</select>
+		  </div>
+			<div class="col-lg-4">
 			  <nav aria-label="Page navigation">
-  				<ul class="pagination">
-				  <li>
+  				<ul class="pagination list">
+				  <li class="special">
 				   <a href="" aria-label="previous">
 					<span aria-hidden="true">&lt;</span>
 				   </a>
 				  </li>
-				  <li><a href="">1</a></li>
+				  <li><a href="" style="color: #24c0b9">1</a></li>
 				  <li><a href="">2</a></li>
 				  <li><a href="">3</a></li>
 				  <li><a href="">4</a></li>
 				  <li><a href="">5</a></li>
-				   <li>
+				   <li class="special">
 				   <a href="" aria-label="previous">
 					<span aria-hidden="true">&gt;</span>
 				   </a>
@@ -192,6 +202,14 @@
   				</ul>
 			  </nav>
 			</div>
+			<div class="col-lg-2" style="margin-top: 10px;">
+			<div class="row">
+			<div class="col-lg-2" style="padding-top: 10px">第</div>
+			   <div class="form-group col-lg-5" style="margin: 0;padding: 0;line-height: 0px;">
+					<label  class="control-label" for="#ipt1"></label>
+					<input style=" border-radius: 15px; text-align:center;margin-left: 5px; border: 1px solid #ddd; background: #fff;" type="text" class="form-control" value="20" readonly="readonly">
+			   </div>		
+			<div class="col-lg-2" style="padding-top: 10px;">页</div>   
 		  </div>
   	</div>
 

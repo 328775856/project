@@ -26,6 +26,18 @@ body{
 	width: 100%;
 	border-radius: 25px;
 }
+.bumen2{
+	margin-left: 13px;
+	padding:0;
+	text-align: center;
+	min-width: 102%;
+	border-radius: 20px;
+}
+.bumen2 li a{
+	background: #f8f8f8;
+	width: 100%;
+	border-radius: 25px;
+}
 .th td{
 	background: #f8f8f8;
 }
@@ -61,4 +73,21 @@ body{
 }
 .ing{
 	color: #eae392;
+}
+.list li a{
+	border: 0px;
+	color: #aaa;
+}
+.special a{
+	border: 1px solid #eee;
+	padding: 5px 10px;
+	border-radius: 15px;
+}
+.special a:hover{
+	border: 1px solid #eee;
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+#a{
+	color: #24c0b9;
 }
